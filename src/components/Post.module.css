@@ -107,9 +107,14 @@
     cursor: pointer;
 }
 
-.commentForm button:hover {
+.commentForm button:not(>:disabled):hover {
     color: var(--green-500);
     background-color: var(--white);
+}
+
+.commentForm button:disabled {
+    opacity: .7;
+    cursor: not-allowed;
 }
 
 .commentList {
